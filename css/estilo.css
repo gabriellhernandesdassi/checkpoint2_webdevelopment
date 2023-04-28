@@ -1,150 +1,109 @@
-/* Estilos para dispositivos com largura menor ou igual a 768px (ex.: celulares) */
-@media (max-width: 768px) {
-    /* Estilos para o cabeçalho */
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    img {
-      width: 100%;
-      max-width: 300px;
-    }
-    
-    nav ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 10px;
-    }
-    
-    nav a {
-      padding: 5px;
-      font-size: 20px;
-    }
-    
-    /* Estilos para a seção conteúdo */
-    section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    article {
-      margin-top: 20px;
-      width: 100%;
-    }
-    
-    article h2 {
-      font-size: 25px;
-      text-align: center;
-    }
-    
-    figure {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    figcaption {
-      font-size: 18px;
-      margin-top: 5px;
-      text-align: center;
-    }
-    
-    /* Estilos para o rodapé */
-    footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
-    
-    nav a img {
-      width: 40px;
-      margin: 10px;
-    }
-  }
-  
-  /* Estilos para dispositivos com largura maior que 768px (ex.: tablets, desktops) */
-  @media (min-width: 769px) {
-    /* Estilos para o cabeçalho */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-    }
-    
-    img {
-      width: 200px;
-      height: auto;
-    }
-    
-    nav ul {
-      display: flex;
-    }
-    
-    nav li {
-      margin-right: 20px;
-    }
-    
-    nav a {
-      color: #333;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    
-    nav a:hover {
-      color: #666;
-    }
-    
-    /* Estilos para a seção conteúdo */
-    section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 20px;
-      margin-top: 20px;
-    }
-    
-    article {
-      width: calc(33.33% - 20px);
-      margin-bottom: 20px;
-    }
-    
-    article h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    
-    figure {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    
-    figcaption {
-      font-size: 16px;
-      margin-top: 5px;
-    }
-    
-    /* Estilos para o rodapé */
-    footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-    
-    nav a img {
-      width: 30px;
-      margin: 0 10px;
-    }
-  }
-  
+/* Estilos globais */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do cabeçalho */
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos da seção */
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+article {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+article h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+article figure {
+  margin: 0;
+  position: relative;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+article figcaption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos do rodapé */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+footer nav a {
+  margin-right: 20px;
+}
+
+footer nav a img {
+  height: 30px;
+}
