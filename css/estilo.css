@@ -41,34 +41,32 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Estilos da seção */
-
 section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  margin: 20px;
+  justify-content: space-between;
 }
 
 article {
-  width: 30%;
+  width: calc(33.33% - 10px);
   margin-bottom: 20px;
 }
 
 article h2 {
-  font-size: 24px;
-  margin: 10px 0;
+  text-align: center;
 }
+
 
 article figure {
   margin: 0;
   position: relative;
 }
 
-article img {
-  width: 100%;
-  height: auto;
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 article figcaption {
@@ -83,8 +81,6 @@ article figcaption {
   padding: 10px;
   box-sizing: border-box;
 }
-
-/* Estilos do rodapé */
 
 footer {
   background-color: #333;
@@ -106,4 +102,31 @@ footer nav a {
 
 footer nav a img {
   height: 30px;
+}
+
+#logos {
+  max-width: 200px;
+}
+
+#imagens {
+  display: flex;
+  margin: auto;
+}
+
+article {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  article img {
+    max-width: 100%;
+  }
 }
