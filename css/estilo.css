@@ -1,0 +1,150 @@
+/* Estilo para todas as páginas */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Estilo do header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo-container img {
+  height: 60px;
+  margin-left: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+/* Estilo da seção */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 80px 20px 20px;
+}
+
+article {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+article h2 {
+  font-size: 24px;
+  margin: 40px 20px 20px;
+}
+
+article figure {
+  margin: 50px;
+}
+
+article figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+article figure figcaption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer h2 {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+footer nav a:hover {
+  opacity: 0.7;
+}
+
+footer nav img {
+  height: 30px;
+}
+
+/* Estilo para telas menores que 768px */
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container img {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  section {
+    padding-top: 120px;
+  }
+
+  article {
+    width: 45%;
+  }
+}
+
+/* Estilo para telas menores que 480px */
+@media screen and (max-width: 479px) {
+  section {
+    padding-top: 160px;
+  }
+
+  article {
+    width: 80%;
+  }
+}
